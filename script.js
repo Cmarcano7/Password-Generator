@@ -47,7 +47,7 @@ function generatePassword(upper, lower, number, specialChars, length){
   let generatedPassword = "";
 
   // Pushes values into fillArr
-  const testArr = [getRandomUpperCase, getRandomLowerCase, getRandomNumber, getRandomSpecialChars];
+  const pushArr = [getRandomUpperCase, getRandomLowerCase, getRandomNumber, getRandomSpecialChars];
 
   //Array that fills depending on what is checked
   const fillArr = []
@@ -56,9 +56,9 @@ function generatePassword(upper, lower, number, specialChars, length){
   const typesArr = [upper, lower, number, specialChars];
   
   //Expression that pushes values into fillArr
-  for (let i=0; i<testArr.length; i++){ 
+  for (let i=0; i<pushArr.length; i++){ 
     if (typesArr[i] == true){
-      fillArr.push(testArr[i]);
+      fillArr.push(pushArr[i]);
     };
   };
 

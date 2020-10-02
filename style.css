@@ -1,3 +1,5 @@
+/* CSS for entire sheet */
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +26,8 @@ body {
   padding-right: 20px;
 } 
 
+
+/* Styling for the header below */
 header {
   text-align: center;
   padding: 20px;
@@ -32,6 +36,7 @@ header {
   text-shadow: white;
 }
 
+/* Styling for the div holding all the inputs below */
 .selectors {
   display: flex;
   justify-content: center;
@@ -78,6 +83,7 @@ header {
   outline: none;
 }
 
+/* Seperate Styling for checkboxes input */
 .center {
   position: relative;
   margin-bottom: 15px;
@@ -96,11 +102,12 @@ header {
   right: 0;
 }
 
+/* Styling for div holding password generator */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
   color: hsl(206, 17%, 28%);
   font-size: 18px;
   margin: auto;
@@ -141,9 +148,10 @@ header {
   clear: both;
 }
 
+/* Seperate Stylinig for the input button */
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color:#86C232;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -187,6 +195,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* Seperate styling for the different viewport sizes */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
